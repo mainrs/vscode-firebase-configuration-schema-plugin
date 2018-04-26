@@ -1,0 +1,6 @@
+.vscode/**
+.vscode-test/**
+.editorconfig
+firebase.json
+.gitignore
+vsc-extension-quickstart.md
