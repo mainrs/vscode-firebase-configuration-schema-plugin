@@ -33,7 +33,7 @@
                 "type": "string"
               },
               "type": {
-                "description": "",
+                "description": "The redirect status code",
                 "type": "number",
                 "enum": [
                   301,
