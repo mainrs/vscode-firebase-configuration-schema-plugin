@@ -1,7 +1,7 @@
 {
   "name": "firebase-configuration-schema",
-  "displayName": "firebase-configuration-schema",
-  "description": "Adds a json schema file for firebase.json files",
+  "displayName": "Firebase Configuration Schema",
+  "description": "Adds a json schema file for firebase.json files, enabling auto completion",
   "version": "0.0.0-development",
   "license": "MIT",
   "scripts": {
