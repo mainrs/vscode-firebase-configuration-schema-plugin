@@ -69,5 +69,8 @@
         "assets": "firebase-configuration-schema.vsix"
       }
     ]
+  },
+  "greenkeeper": {
+    "ignore": ["@semantic-release/git"]
   }
 }
