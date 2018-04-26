@@ -1,0 +1,104 @@
+{
+  "title": "JSON schema for Firebase configuration files",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "hosting": {
+      "description": "Holds the main configuration entries",
+      "type": "object",
+      "properties": {
+        "public": {
+          "description": "The directory that gets uploaded to Firebase",
+          "type": "string"
+        },
+        "ignore": {
+          "description": "Specifies files to ignore on deploy",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "redirects": {
+          "description": "Specifies all http redirects",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "description": "A glob pattern that is matched against all URL paths at the start of every request",
+                "type": "string"
+              },
+              "destination": {
+                "description": "The value used within the Location header entry",
+                "type": "string"
+              },
+              "type": {
+                "description": "",
+                "type": "number",
+                "enum": [
+                  301,
+                  302
+                ]
+              }
+            }
+          }
+        },
+        "rewrites": {
+          "description": "Holds rules for rewrites",
+          "type": "array",
+          "items": {
+            "description": "A redirect item",
+            "type": "object",
+            "properties": {
+              "source": {
+                "description": "A glob specifying a rewrite rule",
+                "type": "string"
+              },
+              "destination": {
+                "description": "A local destination",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "headers": {
+          "description": "An array of custom header definitions",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "description": "Matched against the original request path, regardless of rewrite rules",
+                "type": "string"
+              },
+              "headers": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "description": "The header key",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "The header value",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cleanUrls": {
+          "description": "If true, firebase will drop all .html extensions from file uploads",
+          "type": "boolean"
+        },
+        "trailingSlash": {
+          "description": "Controls whether URLs should have trailing slashes or not",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
