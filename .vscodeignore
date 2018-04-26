@@ -1,6 +1,10 @@
+# directories
 .vscode/**
 .vscode-test/**
+
+# files
 .editorconfig
-firebase.json
 .gitignore
-vsc-extension-quickstart.md
+firebase.json
+
+schemas/jsonschema.schema.json
