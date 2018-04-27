@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "commit": "giz cz",
-    "lint": "jsonlint schemas/firebase.schema.json -V schemas/jsonschema.schema.json",
-    "lint!": "jsonlint schemas/firebase.schema.json -i -V schemas/jsonschema.schema.json",
+    "lint": "jsonlint schemas/firebase.schema.json -V __tests__/jsonschema.schema.json",
+    "lint!": "jsonlint schemas/firebase.schema.json -i -V __tests__/jsonschema.schema.json",
     "precommit": "lint-staged",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"

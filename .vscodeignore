@@ -1,10 +1,9 @@
 # directories
 .vscode/**
 .vscode-test/**
+__tests__
 
 # files
 .editorconfig
 .gitignore
-firebase.json
-
-schemas/jsonschema.schema.json
+.travis.yml
