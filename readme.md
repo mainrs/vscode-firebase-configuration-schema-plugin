@@ -1,5 +1,7 @@
 # Firebase JSON Schema
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SirWindfield/vscode-firebase-configuration-schema-plugin.svg)](https://greenkeeper.io/)
+
 > A schema that adds IntelliSense to `firebase.json` files.
 
 ## Installation
