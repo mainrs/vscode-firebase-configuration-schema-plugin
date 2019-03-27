@@ -39,7 +39,7 @@
     "jsonlint": "^1.6.3",
     "lint-staged": "^7.0.5",
     "semantic-release": "^15.1.7",
-    "semantic-release-vsce": "^2.0.0",
+    "semantic-release-vsce": "^2.2.8",
     "travis-deploy-once": "^5.0.0"
   },
   "config": {
